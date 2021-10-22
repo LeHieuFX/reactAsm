@@ -1,9 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-import React, { Component } from 'react';
-import StaffList from './components/StaffListComponent';
+import { Component } from 'react';
+//import StaffList from './components/StaffListComponent';
 import {STAFFS} from './shared/staffs';
-
 
 class App extends Component {
   constructor(props) {
@@ -18,14 +16,12 @@ class App extends Component {
       <div className="App">
 
         <div className="navbar navbar-dark bg-primary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Ứng Dụng Quản Lý Nhân Sự v1.0</a>
+          <div className="container-fluid">
+            <a className="navbar-brand" href="/">Ứng Dụng Quản Lý Nhân Sự v1.0</a>
           </div>
         </div>
 
-        <div className="d-flex justify-content-around flex-wrap">
-          <StaffList staffs={this.state.staffs} />
-        </div>
+        
 
       </div>
     );
@@ -33,3 +29,9 @@ class App extends Component {
 }
 
 export default App;
+
+/*
+<div className="d-flex justify-content-around flex-wrap">
+          <StaffList staffs={this.state.staffs} />
+        </div>
+*/
