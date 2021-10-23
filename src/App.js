@@ -1,6 +1,6 @@
 import './App.css';
 import { Component } from 'react';
-//import StaffList from './components/StaffListComponent';
+import StaffList from './components/StaffListComponent';
 import {STAFFS} from './shared/staffs';
 
 class App extends Component {
@@ -21,7 +21,9 @@ class App extends Component {
           </div>
         </div>
 
-        
+        <div className="d-flex justify-content-around flex-wrap">
+          <StaffList staffs={this.state.staffs} />
+        </div>
 
       </div>
     );
@@ -29,9 +31,3 @@ class App extends Component {
 }
 
 export default App;
-
-/*
-<div className="d-flex justify-content-around flex-wrap">
-          <StaffList staffs={this.state.staffs} />
-        </div>
-*/
