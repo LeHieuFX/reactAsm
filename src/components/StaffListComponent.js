@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import StaffDetail from './StaffDetailComponent';
 
 class StaffList extends Component {
 
@@ -23,6 +24,7 @@ class StaffList extends Component {
                         <img className="card-img-top" src={staff.image} style={{width:"100%"}} alt={staff.name} />
                         <div className="card-body">
                             <h5 className="card-title">{staff.name}</h5>
+
                         </div>
                     </div>
                 </div>
@@ -31,9 +33,13 @@ class StaffList extends Component {
 
         return(
             <div className="container">
+                
+                <StaffDetail staff={this.state.selectedStaff}/>
+
                 <div className="row">
                     {staffList}
                 </div>
+                
             </div>
         )
     
