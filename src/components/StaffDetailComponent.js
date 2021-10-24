@@ -12,15 +12,33 @@ class StaffDetail extends Component {
     renderStaff(staff) {
         if(staff != null) {
             return(
-                <div className="col-12 col-md-5 m-1">
-                    <div className="card" cursor="pointer" onClick={() => this.onStaffSelect(staff)}>
-                        <img src={staff.image} className="card-img-top" alt={staff.name} style={{width: "100%"}} />
-                        <div className="card-body">
-                            <h5 className="card-title">{staff.name}</h5>
-                            <p className="card-text">{staff.doB}</p>
+                <div className="card" cursor="pointer" onClick={() => this.onStaffSelect(staff)}>
+                    <div class="row g-0 mt-3">
+
+                        <div class="col-md-2">
+                            <img src={staff.image} className="card-img-top" alt={staff.name} style={{width: "100%"}} />
+                            <h5 className="card-title text-center mt-2">{staff.name}</h5>
+                            <p className="card-text"> Vai trò : {staff.name}</p>
                         </div>
+
+                        <div className="col-md-6">
+                            <div className="card-body">
+                                <p className="card-text">Mã nhân viên : FUNIX-00-{staff.id}</p>
+                                <p className="card-text">Ngày sinh : {staff.doB}</p>
+                                <p className="card-text">Ngày vào công ty : {staff.startDate}</p>
+                                <p className="card-text"> Phòng ban : {staff.id}</p>
+                                <p className="card-text"> Số ngày nghỉ còn lại : {staff.annualLeave}</p>
+                                <p className="card-text"> Số ngày làm thêm : {staff.overTime}</p>
+                                
+                            </div>
+                        </div>
+                    
                     </div>
+
                 </div>
+                
+
+                
             );
         } else {
             return(

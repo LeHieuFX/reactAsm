@@ -1,13 +1,15 @@
 import './App.css';
 import { Component } from 'react';
 import StaffList from './components/StaffListComponent';
-import {STAFFS} from './shared/staffs';
+import { STAFFS, DEPARTMENTS, ROLES } from './shared/staffs';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      staffs: STAFFS
+      staffs: STAFFS,
+      departments: DEPARTMENTS,
+      roles: ROLES
     };
   }
 
@@ -22,7 +24,11 @@ class App extends Component {
         </div>
 
         <div className="d-flex justify-content-around flex-wrap">
-          <StaffList staffs={this.state.staffs} />
+          <StaffList 
+            staffs = {this.state.staffs}
+            departments = {this.state.departments}
+            roles = {this.state.roles}
+          />
         </div>
 
       </div>
