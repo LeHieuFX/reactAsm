@@ -1,30 +1,24 @@
 import { Component } from 'react';
-import { DEPARTMENTS } from '../shared/staffs';
 import StaffDetail from './StaffDetailComponent';
 
 class StaffList extends Component {
 
     constructor(props) {
         super(props);
+        
         this.state = {
-            selectedStaff: null,
-            
+            selectedStaff : null,
         };
     }
 
     onStaffSelect(staff) {
         this.setState({
-            selectedStaff: staff,
+            selectedStaff: staff
         })
     }
 
     render() {
-        const departmentList = this.props.departments;
-        console.log(departmentList);
-
-        const roleList = this.props.roles;
-        console.log(roleList);
-
+        
         const staffList = this.props.staffs.map(staff => {
             return(
                 <div key={staff.id} className="col-12 col-md-2 text-center mt-5">

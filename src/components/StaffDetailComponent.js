@@ -12,13 +12,13 @@ class StaffDetail extends Component {
     renderStaff(staff) {
         if(staff != null) {
             return(
-                <div className="card" cursor="pointer" onClick={() => this.onStaffSelect(staff)}>
-                    <div class="row g-0 mt-3">
+                <div className="card" cursor="pointer">
+                    <div className="row g-0 mt-3">
 
-                        <div class="col-md-2">
+                        <div className="col-md-2">
                             <img src={staff.image} className="card-img-top" alt={staff.name} style={{width: "100%"}} />
                             <h5 className="card-title text-center mt-2">{staff.name}</h5>
-                            <p className="card-text"> Vai trò : {staff.name}</p>
+                            <p className="card-text text-center"> Chức danh : xxx </p>
                         </div>
 
                         <div className="col-md-6">
@@ -26,7 +26,7 @@ class StaffDetail extends Component {
                                 <p className="card-text">Mã nhân viên : FUNIX-00-{staff.id}</p>
                                 <p className="card-text">Ngày sinh : {staff.doB}</p>
                                 <p className="card-text">Ngày vào công ty : {staff.startDate}</p>
-                                <p className="card-text"> Phòng ban : {staff.id}</p>
+                                <p className="card-text"> Phòng ban : {staff.department.name} </p>
                                 <p className="card-text"> Số ngày nghỉ còn lại : {staff.annualLeave}</p>
                                 <p className="card-text"> Số ngày làm thêm : {staff.overTime}</p>
                                 
