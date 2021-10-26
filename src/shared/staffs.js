@@ -102,7 +102,7 @@ export const STAFFS =
             annualLeave: 9,
             overTime: 10,
             image: '/assets/images/person-6.jpg',
-            role: ROLES.NORMAL_STAFF
+            role: ROLES.MANAGER_STAFF
         },
         {
             id: 6,
