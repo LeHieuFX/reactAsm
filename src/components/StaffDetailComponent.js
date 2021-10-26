@@ -19,7 +19,7 @@ class StaffDetail extends Component {
                         <div className="col-md-2">
                             <img src={staff.image} className="card-img-top" alt={staff.name} style={{width: "100%"}} />
                             <h5 className="card-title text-center mt-2">{staff.name}</h5>
-                            <p className="card-text text-center"> Chức danh : xxx </p>
+                            <p className="card-text text-center"> Chức danh : {staff.role}</p>
                         </div>
 
                         <div className="col-md-6">
