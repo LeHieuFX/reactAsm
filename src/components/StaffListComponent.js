@@ -21,7 +21,7 @@ class StaffList extends Component {
         
         const staffList = this.props.staffs.map(staff => {
             return(
-                <div key={staff.id} className="col-12 col-md-2 text-center mt-5">
+                <div key={staff.id} className="col-12 col-md-2 text-center mt-2">
                     <div className="card" onClick={() => this.onStaffSelect(staff)} style={{cursor:"pointer"}}>
                         <img className="card-img-top" src={staff.image} style={{width:"100%"}} alt={staff.name} />
                         <div className="card-body">
@@ -35,6 +35,10 @@ class StaffList extends Component {
 
         return(
             <div className="container">
+
+                <div className="row mt-1" style={{color:'blue'}}>
+                    <h5>Click chọn, xem thông tin nhân viên </h5>
+                </div>
                 
                 <StaffDetail staff={this.state.selectedStaff}/>
 

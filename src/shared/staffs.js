@@ -42,6 +42,7 @@ export const STAFFS =
             annualLeave: 1,
             overTime: 1,
             image: '/assets/images/person-1.jpg',
+            role: ROLES.MANAGER_STAFF
         },
         {
             id: 1,
@@ -53,6 +54,7 @@ export const STAFFS =
             annualLeave: 2,
             overTime: 3,
             image: '/assets/images/person-2.jpg',
+            role: ROLES.MANAGER_STAFF
         },
         {
             id: 2,
@@ -64,6 +66,7 @@ export const STAFFS =
             annualLeave: 4,
             overTime: 5,
             image: '/assets/images/person-3.jpg',
+            role: ROLES.MANAGER_STAFF
         },
         {
             id: 3,
@@ -75,6 +78,7 @@ export const STAFFS =
             annualLeave: 6,
             overTime: 7,
             image: '/assets/images/person-4.jpg',
+            role: ROLES.MANAGER_STAFF
         },
         {
             id: 4,
@@ -86,6 +90,7 @@ export const STAFFS =
             annualLeave: 8,
             overTime: 1,
             image: '/assets/images/person-5.jpg',
+            role: ROLES.MANAGER_STAFF
         },
         {
             id: 5,
@@ -97,6 +102,7 @@ export const STAFFS =
             annualLeave: 9,
             overTime: 10,
             image: '/assets/images/person-6.jpg',
+            role: ROLES.NORMAL_STAFF
         },
         {
             id: 6,
@@ -108,6 +114,7 @@ export const STAFFS =
             annualLeave: 9,
             overTime: 10,
             image: '/assets/images/person-7.jpg',
+            role: ROLES.NORMAL_STAFF
         },
         {
             id: 7,
@@ -119,6 +126,7 @@ export const STAFFS =
             annualLeave: 9,
             overTime: 10,
             image: '/assets/images/person-8.jpg',
+            role: ROLES.NORMAL_STAFF
         },
         {
             id: 8,
@@ -130,6 +138,7 @@ export const STAFFS =
             annualLeave: 9,
             overTime: 10,
             image: '/assets/images/person-9.jpg',
+            role: ROLES.NORMAL_STAFF
         },
         {
             id: 9,
@@ -141,6 +150,7 @@ export const STAFFS =
             annualLeave: 9,
             overTime: 10,
             image: '/assets/images/person-10.jpg',
+            role: ROLES.NORMAL_STAFF
         },
         {
             id: 10,
@@ -152,6 +162,7 @@ export const STAFFS =
             annualLeave: 9,
             overTime: 10,
             image: '/assets/images/person-11.jpg',
+            role: ROLES.NORMAL_STAFF
         },
         {
             id: 11,
@@ -163,6 +174,7 @@ export const STAFFS =
             annualLeave: 9,
             overTime: 10,
             image: '/assets/images/person-12.jpg',
+            role: ROLES.NORMAL_STAFF
         },
         {
             id: 12,
@@ -174,6 +186,7 @@ export const STAFFS =
             annualLeave: 9,
             overTime: 10,
             image: '/assets/images/person-13.jpg',
+            role: ROLES.NORMAL_STAFF
         },
         {
             id: 13,
@@ -185,6 +198,7 @@ export const STAFFS =
             annualLeave: 9,
             overTime: 10,
             image: '/assets/images/person-14.jpg',
+            role: ROLES.NORMAL_STAFF
         },
         {
             id: 14,
@@ -196,6 +210,7 @@ export const STAFFS =
             annualLeave: 9,
             overTime: 10,
             image: '/assets/images/person-15.jpg',
+            role: ROLES.NORMAL_STAFF
         },
         {
             id: 15,
@@ -207,6 +222,7 @@ export const STAFFS =
             annualLeave: 9,
             overTime: 10,
             image: '/assets/images/person-16.jpg',
+            role: ROLES.NORMAL_STAFF
         },
 
     ]
